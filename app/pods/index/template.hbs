@@ -1,0 +1,35 @@
+<div class="l-container">
+  <div class="c-search-bar">
+    <form class="c-form" {{action 'search' on='submit'}}>
+      {{input class="c-form__text" type="text" placeholder="Search a city.." value=searchValue disabled=entryNotAllowed}}
+      {{input class="c-search-bar__link" type="submit" value='Search'}}
+    </form>
+  </div>
+  <div class="c-date">
+    Vendredi 9 Mars 2017
+    {{#if userLocation}}
+      {{userLocation}}
+    {{/if}}
+  </div>
+
+  <div class="c-main-weather">
+    <div class="c-main-weather__icon">
+      <img src="http://cdn.apixu.com/weather/64x64/day/113.png" alt="">
+      <div class="c-main-weather__info">
+        <h1>9<small>°C</small></h1>
+        <h2>Sunny</h2>
+      </div>
+    </div>
+
+    <div class="c-card">
+      <h1 class="c-card__title">Informations</h1>
+      <p>
+        <span class="c-card__content"><strong>Temperature</strong> : 9°C</span>
+        <span class="c-card__content"><strong>Feel</strong> : 9°C</span>
+        <span class="c-card__content"><strong>Wind Direction</strong> : NE</span>
+        <span class="c-card__content"><strong>Wind Speed</strong> : 0 km/h</span>
+        <span class="c-card__content"><strong>Humidity</strong> : 9°C</span>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,136 @@
+$gutter: 20px;
+
+/* moving to box-sizing (always) */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans";
+}
+
+html { background: #C4CEDD; }
+
+.l-container {
+  margin: auto;
+  margin-top: 100px;
+  width: 50%;
+  min-width: 800px;
+  background: #F1F4F9;
+  opacity: 1.00;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: $gutter;
+}
+
+.c-search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 60px;
+  border-bottom: 1px solid #C4CEDD;
+
+  .c-search-bar__link {
+    width: 200px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 100%;
+    color: #F1F4F9;
+    background: #3A475F;
+    text-decoration: none;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+
+.c-form {
+  display: flex;
+  width: 100%;
+
+  .c-form__text {
+    border: none;
+    height: 60px;
+    margin: 0px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 100%;
+    color: #65778F;
+    opacity: 1.00;
+
+    padding-left: 10px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+.c-date {
+  padding: $gutter * 2;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 100%;
+  color: #D4D4D4;
+  opacity: 1.00;
+}
+
+.c-main-weather {
+  padding: 0px $gutter * 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .c-main-weather__icon {
+    margin: 0px $gutter;
+    padding-top: 30px;
+    display: flex;
+    width: 40%;
+    h1 {
+      margin: 0px;
+      font-weight: 600;
+      small {
+        font-weight: 100;
+        font-size: 20px;
+        position: absolute;
+        margin-top: 4px;
+      }
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 100;
+      margin: 0px;
+    }
+    img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
+
+.c-card {
+  .c-card__title {
+    margin: 0px;
+    font-weight: 200;
+  }
+  margin: 0px $gutter;
+  padding: 0px $gutter;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .c-card__content {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
